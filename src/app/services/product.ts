@@ -13,7 +13,7 @@ export class Product {
       rating: 4.8,
       description: 'High performance gaming laptop with RTX graphics.',
       category: 'Laptops',
-      image: '/images/laptop.jpg'
+      image: 'images/laptop.jpg'
     },
 
     {
@@ -23,7 +23,7 @@ export class Product {
       rating: 4.5,
       description: 'Noise cancelling wireless headphones.',
       category: 'Accessories',
-      image: '/images/headphones.jpg'
+      image: 'images/headphones.jpg'
     },
 
     {
@@ -33,7 +33,7 @@ export class Product {
       rating: 4.7,
       description: 'RGB mechanical keyboard for gaming and productivity.',
       category: 'Accessories',
-      image: '/images/keyboard.jpg'
+      image: 'images/keyboard.jpg'
     },
 
     {
@@ -43,7 +43,7 @@ export class Product {
       rating: 4.6,
       description: 'High precision gaming mouse with customizable buttons.',
       category: 'Gaming',
-      image: '/images/mouse.jpg'
+      image: 'images/mouse.jpg'
     },
 
     {
@@ -53,7 +53,7 @@ export class Product {
       rating: 4.4,
       description: 'Ultra HD 4K monitor with vibrant display.',
       category: 'Monitors',
-      image: '/images/monitor.jpg'
+      image: 'images/monitor.jpg'
     },
 
     {
@@ -63,7 +63,7 @@ export class Product {
       rating: 4.3,
       description: 'Latest generation smartphone with advanced camera system.',
       category: 'Phones',
-      image: '/images/phone.jpg'
+      image: 'images/phone.jpg'
     }
   ];
 
