@@ -1,0 +1,84 @@
+<div class="container-fluid p-0 d-flex flex-column min-vh-100">
+
+  <app-header></app-header>
+
+  <div class="row g-0">
+
+    <!-- Sidebar -->
+    <div class="col-md-2 bg-light p-3 min-vh-100">
+      <h3 class="mb-4">Categories</h3>
+
+      <ul class="list-group">
+        <li class="list-group-item">Laptops</li>
+        <li class="list-group-item">Phones</li>
+        <li class="list-group-item">Accessories</li>
+        <li class="list-group-item">Gaming</li>
+      </ul>
+    </div>
+
+    <!-- Product Details -->
+    <div class="col-md-10 p-4">
+
+      <div class="row">
+
+        <!-- Product Image -->
+        <div class="col-md-5">
+          <img
+            [src]="product.image"
+            [alt]="product.name"
+            class="img-fluid rounded border"
+          >
+        </div>
+
+        <!-- Product Info -->
+        <div class="col-md-7">
+
+          <h1 class="mb-3">{{ product.name }}</h1>
+
+          <h2 class="text-success mb-3">
+            ${{ product.price }}
+          </h2>
+
+          <p class="mb-3">
+            <strong>Rating:</strong> {{ product.rating }}
+          </p>
+
+          <p class="mb-4">
+            {{ product.description }}
+          </p>
+
+          <button
+            class="btn btn-success btn-lg"
+            (click)="addToCart()"
+          >
+            Add to Cart
+          </button>
+
+          <div
+            *ngIf="addedMessage"
+            class="alert alert-success mt-3"
+          >
+            {{ addedMessage }}
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Related Products -->
+      <div class="mt-5 p-4 bg-light rounded">
+
+        <h2>Related Products</h2>
+
+        <p>
+          Related product section placeholder.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+  <app-footer></app-footer>
+
+</div>

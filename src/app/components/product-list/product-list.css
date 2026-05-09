@@ -1,0 +1,12 @@
+.sidebar {
+  min-height: 100vh;
+}
+
+.banner {
+  border-radius: 10px;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}

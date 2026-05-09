@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-dark px-4 py-3">
+
+  <a routerLink="/" class="text-decoration-none">
+    <img
+    src="/images/logo.jpg"
+    alt="E-Commerce Store Logo"
+    style="height: 80px;"
+    >
+  </a>
+
+  <input
+    type="text"
+    class="form-control w-50"
+    placeholder="Search products..."
+    [(ngModel)]="searchText"
+  />
+
+  <a
+    routerLink="/cart"
+    class="btn btn-warning"
+  >
+    Cart
+  </a>
+
+</nav>
